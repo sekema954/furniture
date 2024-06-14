@@ -1,0 +1,552 @@
+@media(min-width: 1546px) {
+    .navbar{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px 0 60px;
+        z-index: 2000;
+    }
+
+    .navbar .center-nav ul li a{
+        font-size: 30px;
+    }
+
+    .left-nav img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .right-nav ul i{
+        font-size: 25px;
+    }
+
+
+    .home-context{
+        width: 600px;
+        height: 400px;
+        padding-top: 60px;
+    }
+
+    .home-context h1{
+        font-size: 40px;
+    }
+
+    .home-context p{
+        font-size: 25px;
+    }
+
+    .home-context :first-child{
+        font-size: 25px;
+    }
+
+    .home-context button{
+        width: 150px;
+        height: 50px;
+    }
+
+
+    .browse-header h1{
+        font-size: 45px;
+    }
+
+    .browse-header p{
+        font-size: 30px;
+    }
+
+
+    .browse-card{
+        width: 500px;
+        height: 500px;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+
+    .products-title h1{
+        font-size: 40px;
+    }
+
+    .product-card{
+        width: 500px;
+        background-color: #F4F5F7; 
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .products-container{
+        padding: 0 280px 0 200px;
+    }
+
+
+    .cart-btn button{
+        width: 170px;
+        height: 50px;
+    }
+
+
+    .hover-options i{
+       font-size: 25px;
+    }
+
+    .show-more-btn button{
+        width: 240px;
+        height: 50px;
+    }
+    
+
+    .desc-title h1{
+        font-size: 60px;
+    }
+
+    .desc-title p{
+        font-size: 30px;
+    }
+    
+
+    .description-header button{
+        width: 200px;
+        height: 60px; 
+        font-size: 20px;   
+    }
+
+    .carousel-card{
+        width: 860px;
+        height: 700px;
+        position: relative;
+    }
+
+
+    .carousel-item{
+        width: 600px;
+        height: 500px;
+        position: relative;
+    }
+
+    .next-caret{
+        width: 66px;
+        height: 66px;
+    }
+
+    #share{
+        padding: 0 100px 0 100px;
+    }
+
+    .share-header div h1{
+        font-size: 40px;
+    }
+
+    .share-header div p{
+        font-size: 30px;
+    }
+
+    .share-grid{
+        display: grid;
+        grid-template-columns: 1fr 500px 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10px;
+    }
+
+    .wall1{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 500px 1fr;
+        gap: 10px;
+    }
+
+    .wall-wrapper{
+        width: 100%;
+        height: 800px;
+    }
+
+    .wall3{
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-rows: 1fr 500px;
+        gap: 10px;
+    }
+
+
+    .footer-col h4{
+        font-size: 30px;
+    }
+
+
+    .footer-col ul li a{
+        font-size: 30px;
+    }
+
+    .footer-col .social-links a{
+        height: 60px;
+        width: 60px;
+    }
+
+    .footer-col .social-links .fa{
+        font-size: 30px;
+    }
+    
+
+}
+
+
+@media(max-width:2560px){
+    .product-card{
+        width: 400px;
+    }
+
+    #share{
+        min-height: 70%;
+    }
+
+}
+
+@media(max-width:1024px){
+    .browse-card{
+        width: 250px;
+        height:300px;
+    }
+}
+
+@media(max-width:768px){
+    .navbar .center-nav{
+        display: none;
+    }
+
+    .navbar .right-nav{
+        display: none;
+    }
+
+    .navbar .menu-bar{
+        display: inline-block;
+    }
+
+    .browse-card{
+        width: 200px;
+    }
+
+    .hero h1{
+        font-size: 20px;
+    }
+
+
+    .product-card{
+        width: 270px;
+        height: 300px;
+    }
+
+    .cart-btn button{
+        width: 110px;
+        height: 35px;
+        border: none;
+        border-top: solid #B88E2F ;
+        cursor: pointer;
+        transition: all .50s;
+    }
+
+    .discount{
+        width: 40px;
+        height: 40px;
+    }
+
+    .discount p{
+        font-size: 15px;
+    }
+
+    .carousel-card{
+        width: 260px;
+        height: 300px;
+        position: relative;
+    }
+
+    .desc-title h1{
+        font-size: 20px;
+    }
+
+    .desc-title p{
+        font-size: 15px;
+    }
+
+    .share-grid{
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10px;
+    }
+
+    #share{
+        min-height: 50%;
+    }
+
+    .wall1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .wall-wrapper{
+        width: 100%;
+        height: 300px;
+    }
+
+    .wall3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+}
+
+
+@media(max-width:1244px){
+    .browse-card{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+@media(max-width:1024px){
+    .share-grid{
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10px;
+    }
+
+    .wall-wrapper{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media(max-width:997px){
+    .product-card{
+        width: 240px;
+
+    }
+
+    .cart-btn button{
+        width: 100px;
+    }
+
+        
+    .hover-options i{
+        margin: 3px;
+    }
+    #share{
+        min-height: 50%;
+    }
+    
+
+}
+
+
+
+
+@media(max-width:951px){
+    .browse-card{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+
+@media(max-width:670px){
+   .product-card{
+        width: 100%;
+   }
+
+   .cart-btn button{
+        width: 160px;
+        height: 40px;
+    }
+
+    .hover-options i{
+        margin: 12px;
+    }
+
+    .hover-options{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+    }
+
+    .hover-options a{
+        font-size: 25px;
+        color: black;
+    }
+    
+
+}
+
+
+
+
+
+@media(max-width:655px){
+    .browse-range-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        gap: 25px;
+        margin-top: 2%;
+    }
+
+    .browse-card{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:425px){
+
+    
+    .navbar{  
+        padding: 0 20px 0 20px;
+    }
+
+
+    .home-context{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 10%;
+        bottom: 39%;
+        background-color: #FFF3E3;
+        padding: 30px;
+    }
+    
+    .browse-range-grid{
+        display: grid;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 2%;
+    }
+
+    
+    .home-context h1{
+        font-size: 20px;
+    }
+
+    .home-context p{
+        font-size: 13px;
+    }
+
+    .home-context :first-child{
+        font-size: 15px;
+    }
+
+    .home-context button{
+        width: 120px;
+        height: 35px;
+    }
+
+     
+    .browse-card{
+        min-width: 400px;
+        height: 400px;
+        border-radius: 8px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .products-container{
+        padding: 0;
+    }
+    
+    .product-card{
+        width: 100%;
+    }
+
+
+    .description-grid{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+    .info{
+        width: 160px;
+        height: 100px;
+
+    }
+
+    .info h2{
+        font-size: 15px;
+    }
+
+
+    .next-box{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .carousel-item{
+        width: 200px;
+        height: 240px;
+    }
+
+    #share{
+        min-height: 30%;
+    }
+
+
+    .share-grid{
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10px;
+    }
+
+    .wall-wrapper{
+        width: 100%;
+        height: 200px;
+    }
+    
+}
+
+
+
+
+
+
+@media(max-width:320px){
+    .browse-range-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 2%;
+        overflow: hidden;
+    }
+
+
+    
+    .home-context{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 3%;
+        bottom: 39%;
+        background-color: #FFF3E3;
+        padding: 30px;
+    }
+    
+
+}

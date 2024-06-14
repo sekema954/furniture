@@ -12,7 +12,7 @@
 
 
 :root{
-    --lightbg: #FFFFFF;
+    --lightbg: #F4F5F7;
     --buttonbg: #B88E2F;
     --buttonhover: #8d6d21;
     --discountbg: #E97171;
@@ -31,7 +31,6 @@
     justify-content: space-between;
     padding: 0 60px 0 60px;
     z-index: 2000;
-
 }
 
 .navFixed{
@@ -153,6 +152,8 @@ section{
     margin-top: 3%;
 }
 
+
+
 .browse-header h1, .browse-header p{
     display: flex;
     justify-content: center;
@@ -189,12 +190,19 @@ section{
     background-image: url(images/bedroom.png);
 }
 
+
 .browse-range-grid{
     display: flex;
     justify-content: center;
     gap: 25px;
     margin-top: 2%;
 }
+
+
+
+
+
+
 
 .products-title{
     display: flex;
@@ -211,12 +219,15 @@ section{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    position: relative;
 }
 
 .product-card{
     width: 280px;
+    height: 430px;
     background-color: #F4F5F7;
     border-radius: 10px;
+    overflow: hidden;
 
 }
 
@@ -341,6 +352,13 @@ section{
     color: black;
 }
 
+.show-more-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+
+}
+
 .show-more-btn button{
     width: 230px;
     height: 40px;
@@ -354,5 +372,334 @@ section{
 .show-more-btn button:hover{
     background-color: var(--buttonbg);
     color: white;
+    border: solid 1px white;
+
 }
 
+
+
+
+
+#description{
+    background-color: #FCF8F3;
+}
+
+
+.description-grid{
+    display: grid;
+    grid-template-columns: 36% 1fr;
+    grid-template-rows: 1fr;
+}
+
+.description-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+
+.grid-carousel{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: auto;
+    gap: 20px;
+}
+
+
+.carousel-card{
+    width: 360px;
+    height: 500px;
+    position: relative;
+}
+
+.desc-title h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.desc-title>*{
+    margin: 15px;
+}
+
+.description-header button{
+    width: 130px;
+    height: 35px;
+    background-color: var(--buttonbg);
+    cursor: pointer;
+    border: none;
+    transition: all .50s;
+    color: white;
+}
+
+.description-header button:hover{
+    background-color: var(--buttonhover);
+}
+
+.carousel-icon img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-card{
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+
+
+
+.info{
+    width: 220px;
+    height: 120px;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+    position: absolute;
+    bottom: 4%;
+    right: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-icon{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.next-box{
+    width: 50px;
+    height: 50px;
+    background-color: var(--buttonbg);
+    cursor: pointer;
+    position: absolute;
+    bottom: 4%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.next-box .fa{
+    color: white;
+}
+
+.next-box:hover{
+    background-color: var(--buttonhover);
+}
+
+
+
+.carousel-item{
+    width: 360px;
+    height: 400px;
+    position: relative;
+}
+
+.next-caret{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    background-color:var(--buttonbg);
+    box-shadow: 2px 2px 2px 2px grey;
+    transition: all .50s;
+    z-index: 300;
+}
+
+
+.next-caret:hover{
+    background-color: var(--buttonhover);
+}
+
+.next-caret .fa-caret-right{
+    font-size: 30px;
+    color: white;
+}
+
+
+.radio-btns{
+    margin-top: 50px;
+    display: flex;
+}
+
+.radio-el{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    border: solid .60px black;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.active-radio{
+    background-color: var(--buttonbg) !important;
+    border: none;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#share{
+    min-height: 90%;
+}
+
+
+
+.share-header>div{
+    display: flex;
+    justify-content: center;
+}
+
+.share-header div h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.share-header div p{
+    font-size: 20px;
+}
+
+.share-grid{
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 10px;
+}
+
+.share-grid img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.wall1{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 300px 1fr;
+    gap: 10px;
+}
+
+.wall2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+
+.wall-wrapper{
+    width: 100%;
+    height: 500px;
+}
+
+.wall3{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 1fr 300px;
+    gap: 10px;
+}
+
+
+
+
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+
+.footer{
+	background-color: #FCF8F3;
+    padding: 70px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: var(--buttonhover);
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+	height: 40px;
+	width: 40px;
+	background-color: var(--buttonbg);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: white;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	background-color: var(--buttonhover);
+}
+
+.footer-col .social-links .fa:hover{
+    color: white;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
