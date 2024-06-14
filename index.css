@@ -27,7 +27,7 @@
 .navbar{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: space-between;
     padding: 0 60px 0 60px;
     z-index: 2000;
@@ -62,6 +62,23 @@
     color: black;
 }
 
+
+.center-nav ul li a:hover::before{
+    content: "";
+    position: absolute;
+    bottom: 16%;
+    width: 35px;
+    height: 4px;
+    background-color: var(--buttonbg);
+    animation: line .60s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes line{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(15px);}
+}
+
 .center-nav ul li a:hover{
     color: rgb(197, 143, 72);
 }
@@ -71,6 +88,59 @@
 }
 
 
+.right-nav .fa{
+    cursor: pointer;
+}
+
+.right-nav .fa-heart{
+    color: #e91e63;
+}
+
+.right-nav .fa-heart:hover{
+    color: rgb(170, 0, 0);
+}
+
+
+.menu-bar{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background-color: black;
+    transition: all .50s;
+}
+
+
+.change .bar1{
+    transform: translate(0, 9px)rotate(45deg);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+
+.change .bar3{
+    transform: translate(0, -9px)rotate(-45deg);
+}
+
+
+.dropdown-card{
+    width: 100%;
+    height: 0;
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+    transition: all .50s;
+}
+
+.changeHeight{
+    height: 260px;
+}
 
 
 
@@ -129,21 +199,6 @@
     font-weight: 700;
     font-size: 13px;
 }
-
-
-.menu-bar{
-    cursor: pointer;
-    display: none;
-}
-
-.bar{
-    width: 30px;
-    height: 4px;
-    margin: 5px;
-    background-color: black;
-}
-
-
 
 
 

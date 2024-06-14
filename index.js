@@ -35,4 +35,13 @@ radioBtn3.addEventListener('click', ()=>{
     radioBtn2.classList.remove('active-radio');
 });
 
+//menubar 
+
+const menuBar = document.querySelector('.menu-bar');
+menuBar.addEventListener('click', ()=>{
+    const dropdownCard = document.querySelector('.dropdown-card');
+    menuBar.classList.toggle('change');
+    dropdownCard.classList.toggle('changeHeight');
+})
+
 
