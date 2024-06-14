@@ -1,4 +1,4 @@
-@media(min-width: 1546px) {
+@media(min-width: 2546px) {
     .navbar{
         width: 100%;
         height: 100px;
@@ -194,22 +194,70 @@
 
 
 @media(max-width:2560px){
+    .navbar .center-nav ul li a{
+        font-size: 20px;
+    }
+
+    .navbar .right-nav i{
+        font-size: 20px !important;
+    }
+
     .product-card{
-        width: 400px;
+        width: 200px;
+    }
+
+    .cart-btn button{
+        width: 100px;
+        height: 30px;
+    }
+
+    .hover-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hover-options i{
+        font-size: 15px;
     }
 
     #share{
         min-height: 70%;
     }
 
+    .share-grid{
+        display: grid;
+        grid-template-columns: 1fr 250px 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10px;
+    }
+
+    .wall-wrapper{
+        height: 400px;
+    }
+    
+    
+    .footer-col h4{
+        font-size: 20px;
+    }
+
+
+    .footer-col ul li a{
+        font-size: 20px;
+    }
+
+    .footer-col .social-links a{
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer-col .social-links .fa{
+        font-size: 20px;
+    }
+    
+
 }
 
-@media(max-width:1024px){
-    .browse-card{
-        width: 250px;
-        height:300px;
-    }
-}
+
 
 @media(max-width:768px){
     .navbar .center-nav{
@@ -228,23 +276,9 @@
         width: 200px;
     }
 
+
     .hero h1{
         font-size: 20px;
-    }
-
-
-    .product-card{
-        width: 270px;
-        height: 300px;
-    }
-
-    .cart-btn button{
-        width: 110px;
-        height: 35px;
-        border: none;
-        border-top: solid #B88E2F ;
-        cursor: pointer;
-        transition: all .50s;
     }
 
     .discount{
@@ -272,7 +306,7 @@
 
     .share-grid{
         display: grid;
-        grid-template-columns: 1fr 200px 1fr;
+        grid-template-columns: 1fr 190px 1fr;
         grid-template-rows: 1fr;
         margin-top: 10px;
     }
@@ -290,7 +324,7 @@
 
     .wall-wrapper{
         width: 100%;
-        height: 300px;
+        height: 290px;
     }
 
     .wall3{
@@ -312,27 +346,9 @@
 }
 
 
-@media(max-width:1024px){
-    .share-grid{
-        display: grid;
-        grid-template-columns: 1fr 200px 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 10px;
-    }
-
-    .wall-wrapper{
-        width: 100%;
-        height: 400px;
-    }
-}
 
 
 @media(max-width:997px){
-    .product-card{
-        width: 240px;
-
-    }
-
     .cart-btn button{
         width: 100px;
     }
@@ -341,6 +357,7 @@
     .hover-options i{
         margin: 3px;
     }
+
     #share{
         min-height: 50%;
     }
@@ -362,9 +379,6 @@
 
 
 @media(max-width:670px){
-   .product-card{
-        width: 100%;
-   }
 
    .cart-btn button{
         width: 160px;
@@ -468,8 +482,24 @@
     }
     
     .product-card{
-        width: 100%;
+        width: 170px;
     }
+
+    .cart-btn button{
+        width: 100px;
+        height: 25px;
+    }
+
+    .hover-options i{
+        margin: 12px;
+        font-size: 10px;
+    }
+    
+    .hover-options a{
+        color: black;
+        text-decoration: none;
+    }
+    
 
 
     .description-grid{
@@ -507,14 +537,14 @@
 
     .share-grid{
         display: grid;
-        grid-template-columns: 1fr 100px 1fr;
+        grid-template-columns: 1fr 90px 1fr;
         grid-template-rows: 1fr;
         margin-top: 10px;
     }
 
     .wall-wrapper{
         width: 100%;
-        height: 200px;
+        height: 160px;
     }
     
 }

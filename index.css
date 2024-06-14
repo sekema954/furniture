@@ -341,7 +341,7 @@ section{
 .hover-options{
     display: flex;
     flex-wrap: nowrap;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .hover-options i{
@@ -350,6 +350,7 @@ section{
 
 .hover-options a{
     color: black;
+    text-decoration: none;
 }
 
 .show-more-btn{
@@ -530,7 +531,7 @@ section{
 
 
 .radio-btns{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
 }
 
