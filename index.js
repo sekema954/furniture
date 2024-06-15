@@ -40,8 +40,10 @@ radioBtn3.addEventListener('click', ()=>{
 const menuBar = document.querySelector('.menu-bar');
 menuBar.addEventListener('click', ()=>{
     const dropdownCard = document.querySelector('.dropdown-card');
+    const showDropdown = document.querySelector('.hideNav');
     menuBar.classList.toggle('change');
     dropdownCard.classList.toggle('changeHeight');
+    showDropdown.classList.toggle('showNav');
 })
 
 
