@@ -278,11 +278,16 @@
     .product-card{
         width: 300px;
     }
+
+    .perks{
+        display: none;
+    }
+    
 }
 
 
 
-@media(max-width:768px){
+@media(max-width:908px){
     .navbar .center-nav{
         display: none;
     }
@@ -443,7 +448,16 @@
     .browse-card{
         width: 100%;
     }
+
+    .contact-fields{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
 }
+
+
 
 
 @media(max-width:425px){
@@ -572,7 +586,7 @@
     }
 
     #share{
-        min-height: 45%;
+        min-height: 70%;
     }
 
 
@@ -623,6 +637,7 @@
         height: 430px;
 
     }
-    
+
+
 
 }

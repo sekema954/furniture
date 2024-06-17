@@ -842,6 +842,11 @@ ul{
     display: flex;
     justify-content: center;
     margin: 10px;
+    
+}
+
+.contact-header{
+    padding: 0 50px 0 50px;
 }
 
 .contact-header img{
@@ -867,6 +872,115 @@ ul{
 }
 
 .contact-main{
-    height: 100vh;
     background-color: white;
+}
+
+
+
+.contact-fields{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 60px 0 60px
+}
+
+.contact-grid-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon, .contact-title{
+    display: inline-block;
+}
+
+.contact-title p{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact-text:last-child{
+    width: 190px;
+}
+
+
+.contact-text{
+    margin: 70px;
+}
+
+.location{
+    width: 100px;
+}
+
+
+.contact-grid-2>div{
+    margin: 30px;
+}
+
+.contact-grid-2 input{
+    width: 90%;
+    height: 40px;
+    padding-left: 14px;
+}
+
+
+.contact-grid-2 textarea{
+    padding: 20px;
+    width: 90%;
+    height: 40%;
+}
+
+.contact-sub p{
+    text-align: center;
+}
+
+.submit-btn button{
+    width: 120px;
+    height: 40px;
+    background-color: var(--buttonbg);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+
+.submit-btn button:hover{
+    background-color: var(--buttonhover);
+}
+
+
+.perks{
+    height: 200px;
+    background-color:  #FAF3EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.perks-container{
+    display: flex;
+}
+
+.perks-container>div{
+    margin: 70px;
+}
+
+.perks-container img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    mix-blend-mode:darken;
+}
+
+
+.perks-container h3{
+    float: right;
+    text-align: center;
+}
+
+.perks-container p{
+    width: 200px;
+    text-align: center;
 }
