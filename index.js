@@ -47,3 +47,29 @@ radioBtn3.addEventListener('click', ()=>{
     radioBtn2.classList.remove('active-radio');
 });
 
+
+
+// Array of image paths
+const imagePaths = [
+    "images/gridItem1.png",
+    "images/gridItem2.png",
+    "images/gridItem3.png"
+];
+
+let currentIndex = 0;
+const carouselIcons = document.querySelectorAll('.carousel-icon');
+
+// Function to update the carousel items based on currentIndex
+function updateCarouselItems() {
+    carouselIcons.forEach((icon, index) => {
+        const img = icon.querySelector('img');
+        img.src = imagePaths[(currentIndex + index) % imagePaths.length];
+    });
+}
+
+// Function to handle the "Next" button click
+function nextImage() {
+    currentIndex = (currentIndex + 1) % imagePaths.length;
+    updateCarouselItems();
+}
+
