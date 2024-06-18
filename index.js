@@ -1,3 +1,15 @@
+//menubar 
+
+const menuBar = document.querySelector('.menu-bar');
+menuBar.addEventListener('click', ()=>{
+    const dropdownCard = document.querySelector('.dropdown-card');
+    const showDropdown = document.querySelector('.hideNav');
+    menuBar.classList.toggle('change');
+    dropdownCard.classList.toggle('changeHeight');
+    showDropdown.classList.toggle('showNav');
+})
+
+
 
 
 window.addEventListener('scroll', ()=>{
@@ -34,16 +46,4 @@ radioBtn3.addEventListener('click', ()=>{
     radioBtn1.classList.remove('active-radio');
     radioBtn2.classList.remove('active-radio');
 });
-
-//menubar 
-
-const menuBar = document.querySelector('.menu-bar');
-menuBar.addEventListener('click', ()=>{
-    const dropdownCard = document.querySelector('.dropdown-card');
-    const showDropdown = document.querySelector('.hideNav');
-    menuBar.classList.toggle('change');
-    dropdownCard.classList.toggle('changeHeight');
-    showDropdown.classList.toggle('showNav');
-})
-
 

@@ -16,6 +16,8 @@
     --buttonbg: #B88E2F;
     --buttonhover: #8d6d21;
     --discountbg: #E97171;
+    --lightbrown: #FAF3EA;
+    --heart:#e91e63;
 }
 
 .container{
@@ -153,13 +155,16 @@
     width: 100%;
     height: 0;
     background-color: var(--lightbg);
-    position: absolute;
+    position: fixed;
+    top: 5%;
     z-index: 100;
     transition: all .50s;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 
 .changeHeight{
     height: 260px;
@@ -359,14 +364,31 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .50s;
 }
+
+
 
 .item1{
     background-image: url(images/item1.png);
 }
 
+.item1:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .item2{
     background-image: url(images/item2.png);
+}
+
+.item2:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -374,9 +396,23 @@ section{
     background-image: url(images/item3.png);
 }
 
+.item3:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .item4{
     background-image: url(images/item4.jfif);
+}
+
+.item4:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item4.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -384,8 +420,22 @@ section{
     background-image: url(images/item5.png);
 }
 
+.item5:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .item6{
     background-image: url(images/item6.png);
+}
+
+.item6:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -393,8 +443,22 @@ section{
     background-image: url(images/item7.jfif);
 }
 
+.item7:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item7.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .item8{
     background-image: url(images/item8.jfif);
+}
+
+.item8:hover{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/item8.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -455,17 +519,21 @@ section{
 }
 
 .hover-options{
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     margin-top: 10px;
 }
 
 .hover-options i{
     margin: 12px;
+    color: white;
+}
+
+.hover-options i:hover{
+    color: var(--heart);
 }
 
 .hover-options a{
-    color: black;
     text-decoration: none;
 }
 
@@ -983,4 +1051,64 @@ ul{
 .perks-container p{
     width: 200px;
     text-align: center;
+}
+
+
+.shop-filter{
+    background-color: var(--lightbrown) ;
+    padding: 0 50px 0 50px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-filter, .right-filter{
+    display: flex;
+}
+
+.left-filter p, .right-filter p{
+    font-size: 25px
+}
+
+
+.right-filter span{
+    width: 20px;
+    background-color: white;
+}
+
+.left-filter>div, .right-filter>div{
+    margin: 25px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.left-filter img{
+    cursor: pointer;
+}
+
+
+.next-page{
+    display: flex;
+    justify-content: center;
+}
+
+.next-page button{
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--lightbrown);
+    cursor: pointer;
+    transition: all .50s;
+    border: none;
+    margin: 20px;
+    font-size: 20px;
+    padding: 0 20px
+}
+
+
+.next-page button:hover{
+    background-color: var(--buttonhover);
+    color: white;
 }
